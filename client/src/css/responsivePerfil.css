@@ -1,0 +1,65 @@
+
+/* Estilos para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .image-small {
+        width: 50%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .navbar-nav {
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .image-small {
+        width: auto;
+    }
+
+    .footer {
+        text-align: right;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+.error-container {
+    text-align: center;
+}
+.error-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.error-message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.error-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.error-button {
+    font-size: 1rem;
+}

@@ -1,0 +1,17 @@
+.custom-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+tr {
+    color: #F7A072;
+}
+
+.delete-usuario {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.delete-usuario:hover {
+    transform: scale(1.2);
+
+}

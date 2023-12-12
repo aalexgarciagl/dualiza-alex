@@ -1,0 +1,43 @@
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+    }
+
+    .bg-custom {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .navbar-nav {
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0;
+    }
+
+    .carousel-inner img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bg-custom {
+        margin-top: 0;
+    }
+}

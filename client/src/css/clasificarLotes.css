@@ -1,0 +1,10 @@
+#botonClasificar{
+   cursor: pointer;
+   transition: transform 0.3s;
+
+}
+
+#botonClasificar:hover {
+    transform: scale(1.2);
+
+}

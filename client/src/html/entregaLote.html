@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/entregaResponsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/entregaLote.css" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <script src="../js/mapa.js"></script>
+    <title>Realizar envío - Dualiza</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="main.html">
+                    <img src="../assets/logoytextologinsinbg.png" alt="Logo" height="100">
+                </a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" id="colaboradorEnvios">
+                        <a class="menu-text nav-link" href="enviosColab.html">Mis envíos</a>
+                    </li>
+                </ul>
+                <div class="navbar-brand">
+                    <a href="perfil.html"><img class="profile" id="profileIconImg" src="../assets/profile-icon.png"
+                            alt="Profile Icon" height="50"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="text-center color-blue mt-4">
+            <h1>Ralizar una entrega</h1>
+            <hr>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-container">
+                        <div class="panel">
+                            <b><span id="ubicacionEscogida"></span></b>
+
+                            <div>
+                                <img class="sb-title-icon"
+                                    src="https://fonts.gstatic.com/s/i/googlematerialicons/location_pin/v5/24px.svg"
+                                    alt="">
+                                <span class="sb-title">Selecciona ubicación</span>
+                            </div>
+                            <input type="text" placeholder="Direccion" id="location-input" />
+                        </div>
+                        <div class="map" id="gmp-map"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <h2 class="color-orange mb-2">Descripción:</h2>
+                        <textarea class="form-control mb-4" id="descripcion" rows="3"></textarea>
+                        <button type="button" class="btn custom-button btn-block" id="botonEnviarLote">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z" />
+                            </svg> Enviar lote
+                        </button>
+                    </div>
+                    <h5 id="mssg"></h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>© 2023 Javier Morales Rico y Alejandro García Gil. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../../dist/entregaLote.main.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-LE0l75YwOlzdWSmJtGPGlRx-lKnnqmM&libraries=places,marker&callback=initMap&solution_channel=GMP_QB_addressselection_v2_cABC"
+        async defer></script>
+</body>
+
+</html>

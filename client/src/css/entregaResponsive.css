@@ -1,0 +1,60 @@
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .map {
+        height: 200px;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .navbar-brand {
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .map {
+        height: 400px;
+    }
+}
+
+/* Estilos específicos para el formulario de envío */
+.card-container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.btn-block {
+    margin-top: 20px;
+}
+

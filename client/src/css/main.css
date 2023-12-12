@@ -1,0 +1,25 @@
+.img-car {
+    width: 50%;
+    height: 50%;
+}
+
+hr {
+    background-color: #0FA3B1;
+    border: 3px solid;
+}
+
+
+.bg-custom {
+    padding: 10px 100px 10px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#imageCarousel img {
+    max-height: 400px; /* Establece la altura máxima deseada */
+    width: 400px;
+    margin: auto; /* Centra la imagen horizontalmente */
+}
+
+.carousel-inner {
+    text-align: center; /* Centra las imágenes dentro del carousel */
+}

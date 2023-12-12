@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/clasificarLotes.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    
+    <title>Gestionar envíos - Dualiza</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="main.html">
+                    <img src="../assets/logoytextologinsinbg.png" alt="Logo" height="100">
+                </a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" id="panelAdmin">
+                        <a class="menu-text nav-link" href="panelAdmin.html">Panel de administración</a>
+                    </li>
+                    <li class="nav-item" id="panelClasi">
+                        <a class="menu-text nav-link" href="panelClasi.html">Panel de clasificador</a>
+                    </li>
+                </ul>
+                <div class="navbar-brand">
+                    <a href="perfil.html"><img class="profile" id="profileIconImg" src="../assets/profile-icon.png"
+                            alt="Profile Icon" height="50"></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center color-blue">
+                    <h1>Gestionar lotes</h1>
+                    <hr>
+                </div>
+            </div>
+            <div id="tablaTodosLotes" class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table id="tablaLotes" class="table table-hover table-dark">
+                            <thead class="thead-dark">
+                                <tr class="color-blue custom-bg">
+                                    <th>Código de Lote</th>
+                                    <th>Remitente</th>
+                                    <th>Latitud</th>
+                                    <th>Longitud</th>
+                                    <th>Estado</th>
+                                    <th>Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>© 2023 Javier Morales Rico y Alejandro García Gil. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../../dist/gestionEnvios.main.js"></script>
+</body>
+
+</html>
